@@ -1,42 +1,127 @@
 #root {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.home-screen {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.home-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.theme-toggle-btn {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.app-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #262626;
 }
 
-.card {
-  padding: 2em;
+.app-description {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.4;
 }
 
-.read-the-docs {
-  color: #888;
+/* Dark mode styles */
+.home-screen.dark .home-header {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.home-screen.dark .home-title {
+  color: #f9fafb;
+}
+
+.home-screen.dark .theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f9fafb;
+}
+
+.home-screen.dark .app-card {
+  background: #262626;
+  border-color: #464646;
+}
+
+.home-screen.dark .app-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.home-screen.dark .app-title {
+  color: #f9fafb;
+}
+
+.home-screen.dark .app-description {
+  color: #d1d5db;
+}
+
+/* Light mode styles */
+.home-screen.light .home-header {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.home-screen.light .home-title {
+  color: #262626;
+}
+
+.home-screen.light .theme-toggle-btn {
+  background: rgba(0, 0, 0, 0.05);
+  color: #262626;
 }
