@@ -1,12 +1,21 @@
+import React from 'react';
 import { FiExternalLink } from 'react-icons/fi';
+import { useTheme } from '../../contexts/ThemeContext';
 
 const Footer = ({ toolName = 'Internal Tool' }) => {
+  const { isDarkMode } = useTheme();
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex md:sticky bottom-0 left-0 right-0 py-4 border-t border-neutral-700 bg-neutral-900 z-10">
+    <footer className={`flex md:sticky bottom-0 left-0 right-0 py-4 border-t z-10 ${
+      isDarkMode 
+        ? 'border-neutral-700 bg-neutral-900' 
+        : 'border-gray-200 bg-gray-50'
+    }`}>
       <div className="container mx-auto px-4">
-        <p className="text-center text-sm text-neutral-400">
+        <p className={`text-center text-sm ${
+          isDarkMode ? 'text-neutral-400' : 'text-gray-600'
+        }`}>
           {toolName} for {' '}
           <a
             href="https://homesfarmsandland.com"

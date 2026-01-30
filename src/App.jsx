@@ -4,9 +4,11 @@ import './App.css'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="bg-bg text-text min-h-screen">
+      <main>
       <HomeScreen />
-      <Footer toolName="Content Builder" />
+     
+      </main> <Footer toolName="Content Builder" />
     </div>
   )
 }
