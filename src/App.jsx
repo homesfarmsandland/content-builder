@@ -1,9 +1,14 @@
 import React from 'react'
-import HomeScreen from './components/HomeScreen'
+import { HomeScreen, Footer } from './components'
 import './App.css'
 
 function App() {
-  return <HomeScreen />
+  return (
+    <div className="min-h-screen flex flex-col">
+      <HomeScreen />
+      <Footer toolName="Content Builder" />
+    </div>
+  )
 }
 
 export default App
