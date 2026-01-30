@@ -24,6 +24,14 @@ export const appsConfig = [
     disabled: true
   },
   {
+    id: 'image-editor',
+    title: 'Image Editor',
+    description: 'Edit preview and hero images for homesfarmsandland.com',
+    path: '/image-editor',
+    icon: '🖼️',
+    disabled: true
+  },
+  {
     id: 'settings',
     title: 'Settings',
     description: 'Manage app preferences',
