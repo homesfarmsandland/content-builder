@@ -97,7 +97,7 @@ const Access = () => {
             <div>
               <button
                 type="submit"
-                className="w-full flex justify-center py-2 px-4 cursor-pointer border border-transparent rounded-md shadow-sm text-sm font-medium text-yellow-900 bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 transition-colors"
+                className={`w-full flex justify-center py-2 px-4 cursor-pointer border border-transparent rounded-md shadow-sm text-sm font-medium bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 transition-colors ${isDarkMode ? 'bg-yellow-500 hover:bg-yellow-600 text-yellow-900' : 'bg-yellow-500 hover:bg-yellow-600 text-white'}`}
               >
                 Sign In
               </button>
