@@ -12,9 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: 8px;
 }
 
 .home-title {
@@ -81,7 +78,6 @@
 
 /* Dark mode styles */
 .home-screen.dark .home-header {
-  background: rgba(255, 255, 255, 0.05);
 }
 
 .home-screen.dark .home-title {
@@ -112,7 +108,6 @@
 
 /* Light mode styles */
 .home-screen.light .home-header {
-  background: rgba(0, 0, 0, 0.02);
 }
 
 .home-screen.light .home-title {
