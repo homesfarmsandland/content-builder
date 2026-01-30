@@ -1,5 +1,19 @@
 export const appsConfig = [
   {
+    id: 'blog-builder',
+    title: 'Blog Builder',
+    description: 'Create and manage blog posts',
+    path: '/blog-builder',
+    icon: '📝'
+  },
+  {
+    id: 'vote-builder',
+    title: 'Vote Builder',
+    description: 'Create polls and voting systems',
+    path: '/vote-builder',
+    icon: '🗳️'
+  },
+  {
     id: 'content-builder',
     title: 'Content Builder',
     description: 'Build and manage content',
