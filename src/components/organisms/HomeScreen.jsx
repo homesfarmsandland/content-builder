@@ -9,7 +9,7 @@ const HomeScreen = () => {
     <div className={`home-screen ${isDarkMode ? 'dark' : 'light'}`}>
       <header className={`home-header gap-3 m-4 ${isDarkMode ? 'bg-none' : 'bg-none'}`}>
         <div>
-          <h1 className={`text-3xl font-bold mb-2 ${isDarkMode ? 'text-neutral-200' : 'text-gray-900'}`}>Content Builder</h1>
+          <h1 className={`text-3xl font-bold mb-2 ${isDarkMode ? 'text-neutral-200' : 'text-neutral-800'}`}>Content Builder</h1>
           <p className={isDarkMode ? 'text-neutral-400' : 'text-gray-600'}>Manage content across <i>homesfarmsandland.com</i></p>
         </div>
         <button

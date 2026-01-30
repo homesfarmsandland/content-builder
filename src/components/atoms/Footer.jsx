@@ -8,8 +8,8 @@ const Footer = ({ toolName = 'Internal Tool' }) => {
 
   return (
     <footer className={`flex md:sticky bottom-0 left-0 right-0 py-4 border-t z-10 ${
-      isDarkMode 
-        ? 'border-neutral-700 bg-neutral-900' 
+      isDarkMode
+        ? 'border-neutral-700 bg-neutral-900'
         : 'border-gray-200 bg-gray-50'
     }`}>
       <div className="container mx-auto px-4">
@@ -21,7 +21,7 @@ const Footer = ({ toolName = 'Internal Tool' }) => {
             href="https://homesfarmsandland.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-yellow-400 hover:text-yellow-300 underline inline-flex items-center gap-1"
+            className={`underline inline-flex items-center gap-1 ${isDarkMode ? 'text-yellow-400 hover:text-yellow-300' : 'text-yellow-500 hover:text-yellow-400'}`}
           >
             homesfarmsandland.com
             <FiExternalLink className="w-3 h-3" />
