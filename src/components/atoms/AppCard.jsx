@@ -14,15 +14,15 @@ const AppCard = ({ app, onClick }) => {
   return (
     <div
       className={`p-4 rounded-lg border transition-all duration-200 ${
-        app.disabled 
+        app.disabled
           ? `cursor-not-allowed opacity-60 ${
-              isDarkMode 
-                ? 'bg-neutral-800 text-white border-neutral-700' 
+              isDarkMode
+                ? 'bg-neutral-800 text-white border-neutral-700'
                 : 'bg-white text-gray-900 border-gray-200'
             }`
           : `cursor-pointer hover:scale-105 ${
-              isDarkMode 
-                ? 'bg-neutral-800 text-white border-neutral-700 hover:shadow-lg hover:shadow-black/30' 
+              isDarkMode
+                ? 'bg-neutral-800 text-white border-neutral-700 hover:shadow-lg hover:shadow-black/30'
                 : 'bg-white text-gray-900 border-gray-200 hover:shadow-lg'
             }`
       }`}
@@ -30,8 +30,8 @@ const AppCard = ({ app, onClick }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="text-3xl mb-2">{app.icon}</div>
-      <h3 className={`font-semibold text-sm mb-1 transition-opacity duration-300 ${
+      <div className="text-3xl mb-2 select-none">{app.icon}</div>
+      <h3 className={`font-semibold text-sm mb-1 transition-opacity duration-300 select-none ${
         app.disabled && isHovered ? 'text-amber-400' : ''
       }`}>
         {app.disabled && isHovered ? 'Coming Soon' : app.title}
